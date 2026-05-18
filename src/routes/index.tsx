@@ -38,7 +38,7 @@ function Home() {
       <Nav />
       <StickyContact />
 
-      <main className="max-w-5xl mx-auto px-6 pt-40 pb-20">
+      <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-28 sm:pt-36 md:pt-40 pb-16 sm:pb-20">
         {/* Hero */}
         <section className="mb-20">
           <FadeIn>
@@ -256,8 +256,8 @@ function Home() {
               </div>
               <div className="flex flex-wrap gap-2">
                 <ConnectLink href="mailto:parv10046@gmail.com" icon={<Mail className="w-4 h-4" />} label="Email" />
-                <ConnectLink href="https://github.com/PARV001" icon={<Github className="w-4 h-4" />} label="GitHub" />
-                <ConnectLink href="https://linkedin.com/in/parv001" icon={<Linkedin className="w-4 h-4" />} label="LinkedIn" />
+                <ConnectLink href="https://github.com/PARVoo1" icon={<Github className="w-4 h-4" />} label="GitHub" />
+                <ConnectLink href="https://www.linkedin.com/in/parv001/" icon={<Linkedin className="w-4 h-4" />} label="LinkedIn" />
               </div>
             </div>
           </BentoCard>
