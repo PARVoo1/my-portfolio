@@ -125,7 +125,7 @@ function Home() {
             <div className="flex flex-col h-full">
               <div className="flex flex-col md:flex-row md:items-start justify-between mb-6 gap-4">
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-muted-foreground mb-2">FEATURED PROJECT</div>
+                  <div className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Featured Project</div>
                   <h3 className="text-2xl font-semibold">High-Concurrency Flash Sale System</h3>
                 </div>
                 <span className="text-xs px-2.5 py-1 rounded-full bg-[oklch(0.92_0.12_140)] text-[oklch(0.3_0.1_140)] whitespace-nowrap">
@@ -169,31 +169,6 @@ function Home() {
                 { slug: "python", color: "3776AB", name: "Python ML" },
                 { slug: "apachekafka", color: "231F20", name: "Kafka" },
                 { slug: "docker", color: "2496ED", name: "Docker" },
-              ].map((t) => (
-                <span key={t.slug} className="inline-flex items-center gap-1.5 text-[11px] px-2.5 py-1 rounded-full bg-muted text-muted-foreground">
-                  <img src={`https://cdn.simpleicons.org/${t.slug}/${t.color}`} className="w-3 h-3" alt="" />
-                  {t.name}
-                </span>
-              ))}
-            </div>
-          </BentoCard>
-
-          {/* Ticket Reservation Engine */}
-          <BentoCard href="https://github.com/PARVoo1/reservation-engine" delay={0.06}>
-            <div className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Project <span className="ml-3 text-xs px-2.5 py-1 rounded-full bg-[oklch(0.92_0.12_140)] text-[oklch(0.3_0.1_140)] whitespace-nowrap">Zero Double-Bookings</span></div>
-            <h3 className="text-xl font-semibold mb-4">Ticket Reservation Engine</h3>
-            <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-              Distributed seat reservation backend handling 500 concurrent users with zero double-bookings. Redis distributed locks as the first line of defense, PostgreSQL pessimistic locking (SELECT FOR UPDATE) as the vault, and Kafka Transactional Outbox Pattern to prevent dual-write failures. Background sweeper eliminates zombie locks after Redis crashes.
-            </p>
-            <div className="flex flex-wrap gap-1.5">
-              {[
-                { slug: "openjdk", color: "EA2D2E", name: "Java 21" },
-                { slug: "spring", color: "6DB33F", name: "Spring Boot" },
-                { slug: "redis", color: "DC382D", name: "Redis" },
-                { slug: "postgresql", color: "4169E1", name: "PostgreSQL" },
-                { slug: "apachekafka", color: "231F20", name: "Apache Kafka" },
-                { slug: "docker", color: "2496ED", name: "Docker" },
-                { slug: "testcontainers", color: "000000", name: "Testcontainers" },
               ].map((t) => (
                 <span key={t.slug} className="inline-flex items-center gap-1.5 text-[11px] px-2.5 py-1 rounded-full bg-muted text-muted-foreground">
                   <img src={`https://cdn.simpleicons.org/${t.slug}/${t.color}`} className="w-3 h-3" alt="" />
