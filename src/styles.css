@@ -30,7 +30,7 @@
 
 :root {
   --radius: 1.25rem;
-  --background: #121212;
+  --background: oklch(0.985 0.008 95);
   --foreground: oklch(0.22 0.01 80);
   --card: oklch(0.955 0.006 95);
   --card-foreground: oklch(0.22 0.01 80);
